@@ -1,0 +1,16 @@
+{
+  "name": "telegram-log-forwarder",
+  "version": "1.0.0",
+  "description": "NodeJS exercise to expand my practical understanding of the language.\r Uses the `node-telegram-bot-api` and `text-file-follower` modules to forward filtered logs to telegram.\r By default, this script uses the linux `nohup` command to run the listener in the background.\r Change this in `package.json` if required.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.40.0",
+    "text-file-follower": "^0.1.0"
+  },
+  "devDependencies": {}
+}
