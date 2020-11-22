@@ -14,7 +14,7 @@ const bot = new TelegramBot(config.teleBotToken, {polling: true});
 const logFile = '/var/log/auth.log';
 const pattern = /sshd/;
 const forwarder = follow(logFile);
-forwarder1.on('line', function(filename, line){
+forwarder.on('line', function(filename, line){
   var filtered = line.match(pattern);
   if(filtered){
     bot.sendMessage(config.teleChatID, logFile1 + "\n" + filtered.input);
